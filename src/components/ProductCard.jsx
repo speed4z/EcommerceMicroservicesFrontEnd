@@ -1,54 +1,30 @@
-import PropTypes from 'prop-types';
+import React from "react";
 
-
-// Define propTypes for ProductCard
-ProductCard.propTypes = {
-  product: PropTypes.shape({
-    productId: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    imageURL: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-
-function ProductCard({ product }) {
+function ProductCard({ name, type, price, desc, imgURL }) {
   return (
-    
-    <div className="bg-white shadow-md rounded-lg overflow-hidden max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] mx-auto border border-gray-200">
-      {/* Product Image */}
-      <div className="w-full h-64 bg-gray-100 overflow-hidden">
+    <div className="p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 w-56 h-[380px] mx-2 flex flex-col">
+      <div className="relative w-full h-3/4">
         <img
-          src={product.imageURL}
-          alt={product.name}
-          className="w-full h-full object-cover"
+          src={imgURL}
+          alt={name}
+          className="w-full h-40 object-cover rounded-xl"
         />
       </div>
-
-      {/* Product Details */}
-      <div className="p-4">
-        {/* Product Name */}
-        <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-
-        {/* Product Type */}
-        <p className="text-sm text-gray-500">{product.type}</p>
-
-        {/* Product Price */}
-        <p className="text-xl font-bold text-gray-800 mt-2">${product.price}</p>
-
-        {/* Product Description */}
-        <p className="text-gray-600 text-sm mt-2">{product.description}</p>
-
-        {/* Add to Cart Button */}
-        <button className="w-full bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition">
-          Add to Cart
-        </button>
+      <div className="flex flex-col justify-between mt-3 flex-grow">
+        <div className="overflow-hidden">
+          <h3 className="text-sm font-extrabold">{name}</h3>
+          <p className="text-xs text-gray-600">{type}</p>
+          <p className="text-xs text-gray-500 mt-1 line-clamp-2">{desc}</p>
+        </div>
+        <div className="mt-2">
+          <p className="text-sm font-semibold text-blue-500">${price}</p>
+        </div>
       </div>
+      <button className="w-full bg-blue-500 text-white py-2 rounded-lg mt-4 hover:bg-blue-600 transition font-extrabold">
+        Add to Cart
+      </button>
     </div>
   );
 }
-
 
 export default ProductCard;
