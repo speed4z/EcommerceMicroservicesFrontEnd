@@ -13,7 +13,7 @@ function CategoryCard({ title, imgURL }) {
         />
       </div>
       <div className="mt-5">
-        <h3 className="text-md font-extrabold text-center">{title}</h3>
+        <h3 className="text-mds font-extrabold text-center">{title}</h3>
       </div>
     </div>
   );
