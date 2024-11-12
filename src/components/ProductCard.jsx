@@ -1,54 +1,34 @@
-import PropTypes from 'prop-types';
+import React from "react";
 
-
-// Define propTypes for ProductCard
-ProductCard.propTypes = {
-  product: PropTypes.shape({
-    productId: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    imageURL: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-
-function ProductCard({ product }) {
+function ProductCard({ prodId, name, type, price, desc, imgURL }) {
   return (
-    
-    <div className="bg-white shadow-md rounded-lg overflow-hidden max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] mx-auto border border-gray-200">
-      {/* Product Image */}
-      <div className="w-full h-64 bg-gray-100 overflow-hidden">
+    <div className="p-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 w-36 h-72 mx-2">
+      <div className="relative w-full h-3/4">
+        {/* Image for product */}
         <img
-          src={product.imageURL}
-          alt={product.name}
-          className="w-full h-full object-cover"
+          src={imgURL}
+          alt={name}
+          className="w-full h-full object-cover rounded-xl"
         />
       </div>
 
-      {/* Product Details */}
-      <div className="p-4">
-        {/* Product Name */}
-        <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
+      <div className="mt-3">
+        {/* Product name */}
+        <h3 className="text-sm font-extrabold text-center">{name}</h3>
 
-        {/* Product Type */}
-        <p className="text-sm text-gray-500">{product.type}</p>
+        {/* Product type */}
+        <p className="text-xs text-center text-gray-600">{type}</p>
 
-        {/* Product Price */}
-        <p className="text-xl font-bold text-gray-800 mt-2">${product.price}</p>
+        {/* Product description */}
+        <p className="text-xs text-center text-gray-500 mt-1">{desc}</p>
 
-        {/* Product Description */}
-        <p className="text-gray-600 text-sm mt-2">{product.description}</p>
-
-        {/* Add to Cart Button */}
-        <button className="w-full bg-blue-600 text-white py-2 rounded mt-4 hover:bg-blue-700 transition">
-          Add to Cart
-        </button>
+        {/* Product price */}
+        <p className="text-sm font-semibold text-center text-blue-500 mt-2">
+          ${price}
+        </p>
       </div>
     </div>
   );
 }
-
 
 export default ProductCard;
