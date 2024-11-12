@@ -12,7 +12,7 @@ function App() {
         <Navbar />
 
         <div className="p-6">
-          <div className="w-3/4 max-w-md bg-blue-400 flex justify-center rounded-xl  mx-auto mb-4">
+          <div className="w-3/4 max-w-md bg-blue-400 flex justify-center rounded-xl mx-auto mb-4">
             <h2 className="text-2xl font-extrabold mb-4 mt-4 text-white">
               Shop by Category
             </h2>
@@ -21,16 +21,15 @@ function App() {
         </div>
 
         <div className="p-6">
-          <div className="w-3/4 max-w-md bg-blue-400 flex justify-center rounded-xl  mx-auto mb-4">
+          <div className="w-3/4 max-w-md bg-blue-400 flex justify-center rounded-xl mx-auto mb-4">
             <h2 className="text-2xl font-extrabold mb-4 mt-4 text-white">
               Shop Products
             </h2>
           </div>
           <ProductGrid />
         </div>
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

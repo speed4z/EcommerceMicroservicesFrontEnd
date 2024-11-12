@@ -5,7 +5,8 @@ const productList = [
     type: "Fruit",
     price: "100",
     description: "Apple",
-    imageURL: "/images/apple.jpeg",
+    imageURL:
+      "https://images.pexels.com/photos/1630588/pexels-photo-1630588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1s",
   },
   {
     productId: "product02",
@@ -14,7 +15,7 @@ const productList = [
     price: "50",
     description: "Banana",
     imageURL:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
+      "https://images.pexels.com/photos/2875814/pexels-photo-2875814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     productId: "product03",
@@ -22,7 +23,8 @@ const productList = [
     type: "Drink",
     price: "150",
     description: "red bull drink",
-    imageURL: "https://nutritionfacts.org/app/uploads/2019/03/Red-bull.jpg",
+    imageURL:
+      "https://images.pexels.com/photos/12310172/pexels-photo-12310172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     productId: "product04",
@@ -30,15 +32,44 @@ const productList = [
     type: "Drink",
     price: "120",
     description: "monster drink",
-    imageURL: "https://www.pngmart.com/files/22/Monster-Energy-PNG-Photo.png",
+    imageURL:
+      "https://images.pexels.com/photos/8269360/pexels-photo-8269360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     productId: "product05",
-    name: "monster",
+    name: "Bread",
+    type: "Food",
+    price: "120",
+    description: "Whole-Wheat-Bread",
+    imageURL:
+      "https://images.pexels.com/photos/1387070/pexels-photo-1387070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    productId: "product06",
+    name: "Milk",
     type: "Drink",
     price: "120",
-    description: "monster drink",
-    imageURL: "https://www.pngmart.com/files/22/Monster-Energy-PNG-Photo.png",
+    description: "Cow-Milk",
+    imageURL:
+      "https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    productId: "product07",
+    name: "Dark-Chocolate",
+    type: "Desert",
+    price: "120",
+    description: "Dark-Chocolate 75%",
+    imageURL:
+      "https://images.pexels.com/photos/6167330/pexels-photo-6167330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    productId: "product08",
+    name: "White-Chocolate",
+    type: "Desert",
+    price: "120",
+    description: "Milk Chocolate",
+    imageURL:
+      "https://images.pexels.com/photos/7260258/pexels-photo-7260258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 

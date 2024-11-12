@@ -1,8 +1,7 @@
 function Footer() {
   return (
-    <footer className="bg-blue-400 text-white py-6 justify-bottom">
+    <footer className="bg-blue-400 text-white py-6">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-center md:text-left">
-        {/* About Section */}
         <div>
           <h3 className="text-lg font-semibold">About Us</h3>
           <p className="mt-2 text-sm">
@@ -11,7 +10,6 @@ function Footer() {
           </p>
         </div>
 
-        {/* Navigation Links */}
         <div>
           <h3 className="text-lg font-semibold">Quick Links</h3>
           <ul className="mt-2 space-y-1">
@@ -38,7 +36,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Social Media Links */}
         <div>
           <h3 className="text-lg font-semibold">Follow Us</h3>
           <ul className="mt-2 flex justify-center md:justify-start space-x-4">
@@ -60,8 +57,6 @@ function Footer() {
           </ul>
         </div>
       </div>
-
-      {/* Copyright */}
       <div className="mt-6 text-center text-sm text-gray-300">
         © 2024 GroceryX. All rights reserved.
       </div>
