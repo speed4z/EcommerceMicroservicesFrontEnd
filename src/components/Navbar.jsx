@@ -12,7 +12,7 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         
         <h2 className="text-white text-2xl font-bold">
-          <a href="/">Amazon</a>
+          <a href="/">Ecomm</a>
         </h2>
 
         <div className="hidden md:flex space-x-6">

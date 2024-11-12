@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ProductGrid from './components/ProductGrid'
 
 function App() {
 
@@ -12,8 +13,10 @@ function App() {
         {/* Main content area with flex-grow to take up available space */}
         <main className="flex-grow">
          
-        </main>
-        
+        <h1 className="text-2xl font-bold mb-4">Product List</h1>
+        <ProductGrid></ProductGrid>
+
+        </main>        
         {/* Footer at the bottom */}
         <Footer />
       </div>
